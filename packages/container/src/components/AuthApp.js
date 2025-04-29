@@ -2,7 +2,7 @@ import { mount } from 'auth/AuthApp';
 import React, { useEffect, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 
-export default () => {
+export default ({ onSignIn }) => {
   const ref = useRef(null);
   const history = useHistory();
 
@@ -19,6 +19,7 @@ export default () => {
           // We can use this to update the history of the container app
         }
       },
+      onSignIn,
     });
     history.listen(onParentNavigate);
     // This will listen to the history changes and call the onParentNavigate function with the new pathname
