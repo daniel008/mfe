@@ -11,6 +11,9 @@ importers:
       chart.js:
         specifier: 3.7.1
         version: 3.7.1
+      dashboard:
+        specifier: 'file:'
+        version: 'file:'
       primeflex:
         specifier: 3.1.3
         version: 3.1.3
@@ -1231,6 +1234,9 @@ packages:
 
   csstype@2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
+
+  'dashboard@file:':
+    resolution: {directory: '', type: directory}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -4700,6 +4706,14 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@2.6.21: {}
+
+  'dashboard@file:':
+    dependencies:
+      chart.js: 3.7.1
+      primeflex: 3.1.3
+      primeicons: 5.0.0
+      primevue: 3.12.0(primeicons@5.0.0)(vue@3.2.31)
+      vue: 3.2.31
 
   data-view-buffer@1.0.2:
     dependencies:
